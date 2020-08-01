@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.tsx?$/,
@@ -11,6 +12,7 @@ module.exports = ({ config }) => {
       {
         loader: require.resolve('react-docgen-typescript-loader'),
         options: {
+          tsconfigPath: path.resolve(__dirname, '../tsconfig.json'),
           shouldExtractLiteralValuesFromEnum: true,
           propFilter: (prop) => {
             if (prop.parent) {

@@ -1,27 +1,36 @@
 module.exports = {
   root: true,
-  plugins: ["prettier"],
-  rules: {
-    "prettier/prettier": "warn",
-  },
-  parser: "babel-eslint",
+  parser: 'babel-eslint',
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module',
   },
-  ignorePatterns: ["node_modules", "out", "dist", "deno"],
+  extends: ['standard'],
+  rules: {
+    'space-before-function-paren': ['warn', {
+      named: 'never',
+    }],
+    'no-unused-expressions': 'off',
+    'comma-dangle': ['warn', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+    }],
+  },
+  ignorePatterns: ['node_modules', 'out', 'dist', 'deno'],
   overrides: [
     {
-      files: ["*.ts", "*.tsx"],
-      parser: "@typescript-eslint/parser",
-      plugins: ["prettier", "@typescript-eslint"],
-      extends: ["plugin:@typescript-eslint/recommended"],
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+      ],
       rules: {
-        "@typescript-eslint/no-unused-vars": "off",
-        "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/no-extra-semi": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "off",
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-extra-semi': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
       },
     },
   ],
