@@ -38,7 +38,7 @@
     "test": "react-scripts test",
     "lint": "eslint ./src --ext tsx,ts",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 8001"
+    "storybook": "start-storybook -p 8001 -c storybook"
   },
   "browserslist": {
     "production": [
