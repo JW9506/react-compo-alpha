@@ -6,10 +6,12 @@ const wrapperStyle: React.CSSProperties = {
   padding: '20px 40px',
 }
 
-const storyWrapper = (stroyFn: any) => (
+const storyWrapper = (storyFn: any) => (
   <div style={wrapperStyle}>
-    <h3>Component Display</h3>
-    {stroyFn()}
+    <h3 style={{ borderBottom: '1px solid #BDBDBD', paddingBottom: '0.5rem' }}>
+      Component Display
+    </h3>
+    {storyFn()}
   </div>
 )
 addDecorator(storyWrapper)
