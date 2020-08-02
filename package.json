@@ -1,6 +1,21 @@
 {
   "name": "react-compo-alpha",
   "version": "0.1.0",
+  "description": "React component library",
+  "author": "Jayden Wong",
+  "keywords": [
+    "Component",
+    "UI",
+    "React"
+  ],
+  "homepage": "https://github.com/JW9506/react-compo-alpha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JW9506/react-compo-alpha"
+  },
+  "files": [
+    "dist"
+  ],
   "private": false,
   "license": "MIT",
   "main": "dist/index.js",
@@ -54,7 +69,8 @@
     "test": "react-scripts test --env=jest-environment-jsdom-fourteen",
     "lint": "eslint ./src ./storybook --ext tsx,ts",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 8001 -c storybook"
+    "storybook": "start-storybook -p 8001 -c storybook",
+    "prepublishOnly": "yarn build"
   },
   "browserslist": {
     "production": [
