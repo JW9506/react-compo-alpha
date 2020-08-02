@@ -4,23 +4,15 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
-  extends: ['standard'],
+  plugins: ['prettier'],
   rules: {
-    'space-before-function-paren': ['warn', {
-      named: 'never',
-    }],
-    'no-unused-expressions': 'off',
-    'comma-dangle': ['warn', {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-    }],
+    'prettier/prettier': 'warn',
   },
   ignorePatterns: ['node_modules', 'out', 'dist', 'deno'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
       extends: [
         'plugin:@typescript-eslint/recommended',
       ],
@@ -31,6 +23,7 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/member-delimiter-style': 'off',
       },
     },
   ],

@@ -1,5 +1,11 @@
 const path = require('path')
 module.exports = ({ config }) => {
+  config.module.rules = config.module.rules.filter((obj) => {
+    return (
+      obj.test.toString() !== '/\\.(js|mjs|jsx|ts|tsx)$/' ||
+      obj.enforce !== 'pre'
+    )
+  })
   config.module.rules.push({
     test: /\.tsx?$/,
     use: [
