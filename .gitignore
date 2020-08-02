@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 install.sh
+/.vscode
 
 # testing
 /coverage
