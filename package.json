@@ -1,6 +1,6 @@
 {
   "name": "react-compo-alpha",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "React component library",
   "author": "Jayden Wong",
   "keywords": [
@@ -24,6 +24,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "clsx": "^1.1.1",
+    "react-icons": "^3.10.0",
     "styled-components": "^5.1.1"
   },
   "peerDependencies": {
@@ -58,7 +59,6 @@
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.10.0",
     "react-scripts": "3.4.1",
     "regenerator-runtime": "^0.13.7",
     "typescript": "~3.7.2"
