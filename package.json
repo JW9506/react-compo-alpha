@@ -1,6 +1,6 @@
 {
   "name": "react-compo-alpha",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "React component library",
   "author": "Jayden Wong",
   "keywords": [
@@ -70,7 +70,7 @@
     "lint": "eslint ./src ./storybook --ext tsx,ts",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 8001 -c storybook",
-    "prepublishOnly": "yarn build"
+    "prepare": "yarn build"
   },
   "browserslist": {
     "production": [
