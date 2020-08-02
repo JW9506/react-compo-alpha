@@ -45,6 +45,7 @@ const Dragger: React.FC<DraggerProps> = (props) => {
 
   return (
     <DraggerWrapper
+      data-isdrag={dragOver}
       dragOver={dragOver}
       onDragOver={(e) => handleDrag(e, true)}
       onDragLeave={(e) => handleDrag(e, false)}
