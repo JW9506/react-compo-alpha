@@ -1,6 +1,3 @@
-export {
-  Upload as default,
-  UploadProps,
-  UploadFile,
-  UploadFileStatus,
-} from './upload'
+export { Upload as default } from './upload'
+
+export type { UploadProps, UploadFile, UploadFileStatus } from './upload'

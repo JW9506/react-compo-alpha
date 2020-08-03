@@ -62,7 +62,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "regenerator-runtime": "^0.13.7",
-    "typescript": "~3.7.2"
+    "typescript": "3.9.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -72,6 +72,7 @@
     "lint": "eslint ./src ./storybook --ext tsx,ts",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 8001 -c storybook",
+    "buildstory": "build-storybook",
     "prepare": "yarn test:nowatch && yarn build"
   },
   "husky": {
