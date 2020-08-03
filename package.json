@@ -8,7 +8,7 @@
     "UI",
     "React"
   ],
-  "homepage": "https://github.com/JW9506/react-compo-alpha",
+  "homepage": "http://react-compo-alpha.xyz",
   "repository": {
     "type": "git",
     "url": "https://github.com/JW9506/react-compo-alpha"
@@ -72,7 +72,7 @@
     "lint": "eslint ./src ./storybook --ext tsx,ts",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 8001 -c storybook",
-    "buildstory": "build-storybook",
+    "buildstory": "build-storybook -c storybook -s public",
     "prepare": "yarn test:nowatch && yarn build"
   },
   "husky": {

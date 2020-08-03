@@ -18,7 +18,7 @@ addDecorator(storyWrapper)
 addDecorator(withInfo)
 addParameters({ info: { inline: true, header: false } })
 const loaderFn = () => {
-  const allExports: any[] = []
+  const allExports: any[] = [require('../src/welcome.stories.tsx')]
   const req = require.context('../src/components', true, /\.stories\.tsx$/)
   req.keys().forEach((fname) => allExports.push(req(fname)))
   return allExports
